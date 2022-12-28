@@ -67,7 +67,7 @@ Below is a screenshot of the election_analysis.txt file for the Colorado congres
 ### Business Proposal ###
 The data analytics team wanted to provide the Colorado Board of Elections team and the Election Commission members with a business proposal for how to use this Python script in future elections. In its current state, this Python script is written for this specific election, reviewing candidates and counties. It is likely that in future elections the board and commision members may want to view the election results in different formats. For example, viewing the data by city instead of county and identifying the county with the lowest turnout. For this reason, the data anlytics team provided two additional snipets of Python script that can be used in lieu of the current script or on its own for future election audits:
 
-> Example One - Adding a Floating-Decimal Value to the candidate_name Dictionary:
+> ***Example One - Adding a Floating-Decimal Value to the candidate_name Dictionary:***
 >> The purpose of this Python script is to allow those who audit the election data to identify the floating-decimal format of total votes each candidate received from the total votes of 369,711. This will allow the team to use an additional format of the calculated election data.
 
 ***Modified Python Script Steps:***
@@ -79,7 +79,7 @@ The data analytics team wanted to provide the Colorado Board of Elections team a
 f"{candidate_name}: {vote_percentage:.1f}% ({votes:,}) (vote_floating_decimal:.})\n"
 )
 
-> Example Two - Lowest County Turnout
+> ***Example Two - Lowest County Turnout***
 >> The purpose of this Python script is to allow those who audit the election data to view which county had the lowest amount of turnout. These findings can help the state deploy marketing tactics to encourage these individuals to show up for elections. This will allow the voice of smaller or low turnout counties have a voice in the election and its respective results.
 
 ***Modified Python Script Steps:***
